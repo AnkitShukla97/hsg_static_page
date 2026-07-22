@@ -1,0 +1,154 @@
+.about {
+    padding: 100px 0;
+}
+
+.about_main {
+    display: flex;
+    gap: 30px;
+}
+
+.about_sec_1 {
+    width: 35%;
+}
+
+.about_sec_1 h2 {
+    font-size: 52px;
+    line-height: 65px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.about_sec_1 h2 span {
+    color: #1db497;
+}
+
+.about_sec_1 p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 40px;
+}
+
+.about_sec_1 button {
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    padding: 10px 30px;
+    background: #101d8b;
+}
+
+.about_sec_2 {
+    width: 25%;
+}
+
+.about_sec_2 img {
+    border-radius: 10px;
+    height: auto;
+}
+
+.about_sec_3 {
+    width: 40%;
+}
+
+.about_sec_3 ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about_sec_3 ul li {
+    width: 50%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about_sec_3 ul li h3 {
+    margin: 10px 0 0;
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.about_sec_3 ul li p {
+    margin-top: 0;
+}
+
+.about_sec_3 ul li h3 small {
+    font-size: 55%;
+}
+
+.about_sec_3 img {
+    width: 80px;
+    height: 80px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .about_main {
+        flex-wrap: wrap;
+    }
+
+    .about_sec_1 {
+        width: 70%;
+    }
+
+    .about_sec_3 {
+        width: 100%;
+    }
+
+    .about_sec_3 ul li {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about {
+        padding: 40px 0;
+    }
+
+    .about_main {
+        flex-direction: column;
+    }
+
+    .about_sec_1,
+    .about_sec_2,
+    .about_sec_3 {
+        width: 100%;
+    }
+
+    .about_sec_1 h2 {
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+
+    .about_sec_1 p {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 10px;
+    }
+
+    .about_sec_2 img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .about_sec_3 ul li {
+        margin-top: 20px;
+    }
+
+    .about_sec_3 img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .about_sec_3 ul li h3 {
+        font-size: 32px;
+    }
+
+    .about_sec_3 ul li p {
+        font-size: 14px;
+    }
+}
