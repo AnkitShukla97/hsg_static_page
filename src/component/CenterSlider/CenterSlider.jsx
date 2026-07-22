@@ -63,29 +63,31 @@ const CenterSlider = ({ items = [] }) => {
       <h2>Lorem ipsum dolor</h2>
 
       <div className="container">
-        <div
-          className="bottom_slider_main"
-          style={{
-            transform: `translateX(calc(50% - ${loopIndex * (100 / visibleCount)}% - ${100 / visibleCount / 2}%))`,
-          }}
-        >
-          {loopItems.map((slide, index) => (
-            <div
-              className={`bottom_slide ${index === loopIndex ? "active" : ""}`}
-              key={index}
-            >
-              <div className="bottom_slide_content">
-                <img
-                  src={slide.sliderImg}
-                  alt={slide.title}
-                  title={slide.title}
-                  width="100%"
-                  height="100%"
-                />
-                <p>{slide.title}</p>
+        <div className="center_slider_div">
+          <div
+            className="bottom_slider_main"
+            style={{
+              transform: `translateX(calc(50% - ${loopIndex * (100 / visibleCount)}% - ${100 / visibleCount / 2}%))`,
+            }}
+          >
+            {loopItems.map((slide, index) => (
+              <div
+                className={`bottom_slide ${index === loopIndex ? "active" : ""}`}
+                key={index}
+              >
+                <div className="bottom_slide_content">
+                  <img
+                    src={slide.sliderImg}
+                    alt={slide.title}
+                    title={slide.title}
+                    width="100%"
+                    height="100%"
+                  />
+                  <p>{slide.title}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
         <div className="slider_nav">
           <button
